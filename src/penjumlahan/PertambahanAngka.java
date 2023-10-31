@@ -158,6 +158,8 @@ public class PertambahanAngka extends javax.swing.JFrame {
 
         jLabel3.setText("Hasil");
 
+        tfHasil.setFocusable(false);
+
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
