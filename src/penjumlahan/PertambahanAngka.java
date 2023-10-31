@@ -17,6 +17,7 @@ public class PertambahanAngka extends javax.swing.JFrame {
     /**
      * Creates new form PertambahanAngka
      */
+    double nilai1, nilai2, hasil;
     public PertambahanAngka() {
         initComponents();
         this.setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("icon.jpg")));
@@ -250,14 +251,13 @@ public class PertambahanAngka extends javax.swing.JFrame {
 
     private void btnTambahActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTambahActionPerformed
         // TODO add your handling code here:
-        int nilai1, nilai2, hasil;
         
         nilai1 = Integer.parseInt(tfAngkaPertama.getText());
         nilai2 = Integer.parseInt(tfAngkaKedua.getText());
         
         hasil = nilai1 + nilai2;
         
-        tfHasil.setText(Integer.toString(hasil));
+        tfHasil.setText(String.valueOf(hasil));
     }//GEN-LAST:event_btnTambahActionPerformed
 
     private void btnHapusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHapusActionPerformed
@@ -276,38 +276,35 @@ public class PertambahanAngka extends javax.swing.JFrame {
 
     private void btnKaliActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnKaliActionPerformed
         // TODO add your handling code here:
-        int nilai1, nilai2, hasil;
         
         nilai1 = Integer.parseInt(tfAngkaPertama.getText());
         nilai2 = Integer.parseInt(tfAngkaKedua.getText());
         
         hasil = nilai1 * nilai2;
         
-        tfHasil.setText(Integer.toString(hasil));
+        tfHasil.setText(String.valueOf(hasil));
     }//GEN-LAST:event_btnKaliActionPerformed
 
     private void btnBagiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBagiActionPerformed
         // TODO add your handling code here:
-        int nilai1, nilai2, hasil;
         
         nilai1 = Integer.parseInt(tfAngkaPertama.getText());
         nilai2 = Integer.parseInt(tfAngkaKedua.getText());
         
         hasil = nilai1 / nilai2;
         
-        tfHasil.setText(Integer.toString(hasil));
+        tfHasil.setText(String.valueOf(hasil));
     }//GEN-LAST:event_btnBagiActionPerformed
 
     private void btnKurangActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnKurangActionPerformed
         // TODO add your handling code here:
-        int nilai1, nilai2, hasil;
         
         nilai1 = Integer.parseInt(tfAngkaPertama.getText());
         nilai2 = Integer.parseInt(tfAngkaKedua.getText());
         
         hasil = nilai1 - nilai2;
         
-        tfHasil.setText(Integer.toString(hasil));
+        tfHasil.setText(String.valueOf(hasil));
     }//GEN-LAST:event_btnKurangActionPerformed
 
     private void tfAngkaPertamaKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_tfAngkaPertamaKeyTyped
